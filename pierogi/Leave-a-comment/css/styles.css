@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgba(229, 224, 230, 0.992);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;    
+}
+
+header {
+    text-align: center;
+    padding: 0;
+    background-color: rgb(198, 151, 172);
+    color: white;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+#pierogi-img {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+}
+
+#pierogi-img img {
+    max-width: 100%; 
+    max-height: 100%;
+    width: 360px;
+    height: auto; 
+    border-radius: 10px;
+    padding: 0px;
+}
+
+#navigate  {
+    width: 100vw;
+    grid-area: nav;
+    padding: 5px;
+    background-color: rgb(198, 151, 172);
+    color: white;  
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    gap: 20px;
+}
+
+button {
+    font-size: larger;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+#comment-table {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#comment-form label {
+    font-weight: bold;
+}
+
+#comment-form textarea {
+    height: 150px;
+}
+
+#comment-form input,
+#comment-form textarea,
+#comment-form select,
+#comment-form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(117, 93, 116);
+}
+
+#comment-form button {
+    background-color: rgb(198, 151, 172);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#comment-form button:hover {
+    background-color: rgb(150, 113, 130);
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(198, 151, 172);
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    #pierogi-img {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #pierogi-img img {
+        width: 20%;
+    }
+}
+
+@media (max-width: 425px) {
+    #pierogi-img {
+        padding: 5px;
+    }
+    #pierogi-img img {
+        width: 100%;
+    }
+}
+

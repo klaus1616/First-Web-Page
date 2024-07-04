@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leave a comment</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <script src="../items.js" type="module"></script>
+    </head>
+    <body>
+        <header>
+            <h1><em>Welcome to Paulina's Kitchen</em></h1>
+        </header>
+        <main id="comment-grid">
+            <section id="pierogi-img">
+                <img src="../img/img-1.jpg" alt="meat pierogi">
+                <img src="../img/img-2.jpg" alt="meat pierogi">
+                <img src="../img/img-3.jpg" alt="meat pierogi">
+                <img src="../img/img-4.jpg" alt="meat pierogi">
+                <img src="../img/img5.jpg" alt="meat pierogi">
+            </section>
+            <article id="navigate">
+                <nav>
+                    <ul>
+                        <li><button><a href="../Home-page/index.html">Home</a></button></li>
+                        <li><button><a href="../Buy-online/index.html">Buy Online</a></button></li>
+                        <li id="question"><button><a href="../Leave-a-comment/index.html">Leave a comment</a></button></li>    
+                    </ul>
+                </nav>            
+            </article>
+            <section id="comment-table">
+                <form id="comment-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="text">Review:</label>
+                    <textarea id="text" name="text"></textarea>
+
+                    <label for="rate">Rate:</label>
+                    <select id="rate" name="rate">
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+
+                    <button id ="submit" type="submit">Submit</button>
+                </form>    
+            </section>
+        </main>
+        <footer>
+            <p>Copyright: Paulina Lech 2024 &copy;</p> 
+        </footer>
+    </body>
+</html>
